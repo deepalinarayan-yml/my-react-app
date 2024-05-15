@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Button } from './Button';
@@ -30,7 +29,8 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
         {user ? (
           <>
             <span className="welcome">
-              Welcome, <b>{user.name}</b>!
+              Welcome to the POC of Visual Testing, <b>{user.name}</b>!
+              <img src="https://legacy.reactjs.org/logo-og.png" alt="There should be a image here"></img>
             </span>
             <Button size="small" onClick={onLogout} label="Log out" />
           </>
