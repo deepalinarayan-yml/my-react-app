@@ -29,10 +29,12 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
         {user ? (
           <>
             <span className="welcome">
-              Welcome to the POC of Visual Testing, <b>{user.name}</b>!
-              <img src="https://legacy.reactjs.org/logo-og.png" alt="There should be a image here"></img>
-            </span>
+              Welcome to the POC of Visual Testing, <b>{user.name}</b>
+
+             </span>
+
             <Button size="small" onClick={onLogout} label="Log out" />
+            <img src="https://www.disneyclips.com/images/images/daisy-duck-clipboard.png" alt="There should be a daisy duck runnig around" />
           </>
         ) : (
           <>
